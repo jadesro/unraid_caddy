@@ -1,0 +1,68 @@
+{
+	auto_https off
+	# debug
+}
+
+bazarr.localdomain:80 {
+	reverse_proxy bazarr:6767
+}
+
+prowlarr.localdomain:80 {
+	reverse_proxy prowlarr:9696
+}
+
+radarr.localdomain:80 {
+	reverse_proxy binhex-radarr:7878
+}
+
+sonarr.localdomain:80 {
+	reverse_proxy binhex-sonarr:8989
+}
+
+adminer.localdomain:80 {
+	reverse_proxy adminer:8080
+}
+
+nzbget.localdomain:80 {
+	reverse_proxy nzbget:6789
+}
+
+grafana.localdomain:80 {
+	reverse_proxy grafana:3000
+}
+
+calibre.localdomain:80 {
+	reverse_proxy calibre:8080
+}
+
+plex.localdomain:80 {
+	reverse_proxy plex:1900
+}
+
+ersatztv.localdomain:80 {
+	reverse_proxy ersatztv:8409
+}
+
+ombi.localdomain:80 {
+	reverse_proxy ombi:3579
+}
+
+tautulli.localdomain:80 {
+	reverse_proxy tautilli:8181
+}
+
+readarr.localdomain:80 {
+	reverse_proxy binhex-readarr:8787
+}
+
+jellyfin.localdomain:80 {
+	reverse_proxy binhex-jellyfin:8096
+}
+
+lidarr.localdomain:80 {
+	reverse_proxy binhex-lidarr:8686
+}
+
+unraid.localdomain:80 {
+	reverse_proxy 192.168.20.50:5000
+}
